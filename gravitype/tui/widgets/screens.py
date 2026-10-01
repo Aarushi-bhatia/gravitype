@@ -176,14 +176,15 @@ class SettingsScreen(Widget):
                 yield Label("Color Theme", classes="setting-label")
                 yield Select(
                     options=[
-                        ("Dracula", "dracula"),
-                        ("Nord", "nord"),
-                        ("Tokyo Night", "tokyonight"),
-                        ("Gruvbox", "gruvbox_dark"),
-                        ("Catppuccin", "catppuccin"),
-                        ("Cyberspace", "cyberspace"),
-                        ("80s Dark", "80s_after_dark"),
-                    ],
+                            ("Dracula", "dracula"),
+                            ("Nord", "nord"),
+                            ("Tokyo Night", "tokyonight"),
+                            ("Gruvbox", "gruvbox_dark"),
+                            ("Catppuccin", "catppuccin"),
+                            ("Cyberspace", "cyberspace"),
+                            ("80s Dark", "80s_after_dark"),
+                            ("Solarized", "solarized_dark"),
+                        ],
                     value=config.get("theme"),
                     allow_blank=False,
                     id="select-theme",
